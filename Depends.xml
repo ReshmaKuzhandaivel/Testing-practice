@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ELCOT/IdeaProjects/Testng-Practice">
+        <classes>
+            <class name="Test.Adminlogintest">
+            <methods>
+                <include name="adminlogintest"/>
+            </methods>
+        </class>
+            <class name="Test.Admintest">
+                <methods>
+            <include name="adminlogintest"/>
+                    <include name="invalidlogintest"/>
+                    <include name="userlogintest"/>
+                </methods>
+            </class>
+            <class name="Test.Invalidlogintest">
+                <methods>
+                    <include name="invalidlogintest"/>
+                </methods>
+            </class>
+            <class name="Test.Userlogintest">
+                <methods>
+                    <include name="userlogintest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
