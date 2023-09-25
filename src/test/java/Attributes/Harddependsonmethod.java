@@ -1,18 +1,19 @@
 package Attributes;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Softdependsonmethod {
+public class Harddependsonmethod {
 
-    @Test(dependsOnMethods = {"loginTest"})
+    @Test(dependsOnMethods = {"SigninTest"})
     public void sendMessageTest() {
-        System.out.println("Test is executed!!!");
+        System.out.println("SignedIn!!!");
         try {
             Thread.sleep(5000);
         } catch (Exception e) {}
     }
 
-    @Test(dependsOnMethods = {"loginTest"})
+    @Test(dependsOnMethods = {"SigninTest"})
     public void postPictureTest() {
         System.out.println("Test");
         try {
@@ -29,11 +30,9 @@ public class Softdependsonmethod {
     }
 
     @Test(dependsOnMethods = {"registerAccountTest"})
-    public void loginTest() {
+    public void SigninTest() {
         System.out.println("Test4");
-        try {
-            Thread.sleep(5000);
-        } catch (Exception e) {}
+        Assert.fail("Intentionally failing!!!");
     }
 
     @Test
@@ -41,4 +40,3 @@ public class Softdependsonmethod {
         System.out.println("Test without dependency");
     }
 }
-

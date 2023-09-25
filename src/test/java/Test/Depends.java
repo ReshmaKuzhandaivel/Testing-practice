@@ -1,2 +1,45 @@
-package Test;public class Depends {
+package Test;
+
+import org.testng.annotations.Test;
+
+public class Depends {
+    @Test(dependsOnMethods = {"loginTest"})
+    public void sendMail() {
+        System.out.println("Mail sent!!!");
+        try {
+            Thread.sleep(5000);
+        } catch (Exception e) {}
+    }
+
+    @Test(dependsOnMethods = {"loginTest"})
+    public void postPictureTest() {
+        System.out.println("Test");
+        try {
+            Thread.sleep(5000);
+        } catch (Exception e) {}
+    }
+
+    @Test
+    public void registerAccountTest() {
+        System.out.println("Test3");
+        try {
+            Thread.sleep(5000);
+        } catch (Exception e) {}
+    }
+
+    @Test(dependsOnMethods = {"registerAccountTest"})
+    public void loginTest() {
+        System.out.println("Test4");
+        try {
+            Thread.sleep(5000);
+        } catch (Exception e) {}
+    }
+
+    @Test
+    public void test() {
+        System.out.println("Test without dependency");
+    }
 }
+
+
+

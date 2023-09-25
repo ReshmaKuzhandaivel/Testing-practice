@@ -3,26 +3,26 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/ELCOT/IdeaProjects/Testng-Practice">
         <classes>
-            <class name="Test.Adminlogintest">
+            <class name="Attributes.PriorityAttribute">
             <methods>
-                <include name="adminlogintest"/>
+                <include name="priorityattribute"/>
             </methods>
         </class>
-            <class name="Test.Admintest">
+            <class name="Attributes.Invocationcount">
                 <methods>
-            <include name="adminlogintest"/>
-                    <include name="invalidlogintest"/>
-                    <include name="userlogintest"/>
+            <include name="Me"/>
+                    <exclude name="Care"/>
+                    <include name="Egoistic"/>
                 </methods>
             </class>
-            <class name="Test.Invalidlogintest">
+            <class name="Test.IncludeExclude">
                 <methods>
-                    <include name="invalidlogintest"/>
+                    <exclude name="Egoistic"/>
                 </methods>
             </class>
-            <class name="Test.Userlogintest">
+            <class name="Attributes.EnableDissable">
                 <methods>
-                    <include name="userlogintest"/>
+                    <include name="Care"/>
                 </methods>
             </class>
         </classes>
