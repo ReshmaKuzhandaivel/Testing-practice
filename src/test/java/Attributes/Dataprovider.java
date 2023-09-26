@@ -18,27 +18,27 @@ public class Dataprovider {
     public void loginTest3(){
         System.out.println("Sago" + "sago321");
     }
-//
-//    @Test(dataProvider = "login-data")
-//    public void loginTest(String username, String password){
-//        System.out.println( username + " " + password);
-//    }
-//
-//    @Test(dataProvider = "Tom-Jerry", dataProviderClass = SigninTestData.class)
-//    public void signInTest(String username, String password){
-//        System.out.println( username + " " + password);
-//    }
-//
-//
-//    @DataProvider(name = "login-data")
-//    Object[][] loginData() {
-//        Object[][] data = {
-//                {"admin", "admin123"},
-//                {"Reshma", "resh123"},
-//                {"Sago", "sago321"},
-//        };
-//        return data;
-  //  }
+
+    @Test(dataProvider = "Tom-Jerry")
+    public void loginTest(String username, String password){
+        System.out.println( username + " " + password);
+    }
+
+    @Test(dataProvider = "Tom-Jerry", dataProviderClass = SigninTestData.class)
+    public void signInTest(String username, String password){
+        System.out.println( username + " " + password);
+    }
+
+
+    @DataProvider(name = "Tom-Jerry")
+    Object[][] loginData() {
+        Object[][] data = {
+                {"admin", "admin123"},
+                {"Reshma", "resh123"},
+                {"Sago", "sago321"},
+        };
+        return data;
+    }
 
 }
 
