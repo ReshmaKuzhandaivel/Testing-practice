@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Test_NameDiscription {
 
-    @Test(testName = "Sending Message - Any Person", dependsOnMethods = {"loginTest"}, suiteName = "Auto Suite")
+    @Test(testName = "Sending Message - Any Person", dependsOnMethods = {"loginTest"} ,description = "message sent")
     public void sendMessageTest() {
         System.out.println("Test is executed!!!");
         try {
@@ -36,7 +36,7 @@ public class Test_NameDiscription {
         } catch (Exception e) {}
     }
 
-    @Test(testName = "Simple Test Method", description = "This test will be executed without dependency!!!")
+  //  @Test(testName = "Simple Test Method", description = "This test will be executed without dependency!!!")
     public void test() {
         System.out.println("Test without dependency");
     }
