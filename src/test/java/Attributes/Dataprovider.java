@@ -6,17 +6,17 @@ import org.testng.annotations.Test;
 public class Dataprovider {
         @Test
     public void loginTest1(){
-        System.out.println("admin" + "admin123");
+        System.out.println("admin" + "admin20");
     }
 
     @Test
     public void loginTest2(){
-        System.out.println("Reshma" + "resh123");
+        System.out.println("Reshma" + "resh10");
     }
 
     @Test
     public void loginTest3(){
-        System.out.println("Sago" + "sago321");
+        System.out.println("Sago" + "sago30");
     }
 
     @Test(dataProvider = "Tom-Jerry")
@@ -33,9 +33,9 @@ public class Dataprovider {
     @DataProvider(name = "Tom-Jerry")
     Object[][] loginData() {
         Object[][] data = {
-                {"admin", "admin123"},
-                {"Reshma", "resh123"},
-                {"Sago", "sago321"},
+                {"admin", "admin20"},
+                {"Reshma", "resh10"},
+                {"Sago", "sago30"},
         };
         return data;
     }

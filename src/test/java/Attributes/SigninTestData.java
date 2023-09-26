@@ -6,9 +6,9 @@ public class SigninTestData {
     @DataProvider(name = "Tom-Jerry")
     Object[][] loginData() {
         Object[][] data = {
-                {"admin", "admin123"},
-                {"Reshma", "resh123"},
-                {"Sago", "sago321"},
+                {"admin", "admin20"},
+                {"Reshma", "resh10"},
+                {"Sago", "sago30"},
         };
 
 
