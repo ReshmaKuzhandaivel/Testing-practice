@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="description test">
+    <test verbose="2" preserve-order="true" name="C:/Users/ELCOT/IdeaProjects/Testng-Practice"
+         parallel="methods" thread-count="2">
+        <groups>
+            <run>
+                <include name="Batch 222"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Attributes.GroupTest"></class>
+        </classes>
+    </test>
+</suite>

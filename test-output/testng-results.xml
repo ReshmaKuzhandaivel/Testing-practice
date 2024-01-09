@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-26T11:35:23 IST" name="description test" finished-at="2023-09-26T11:35:38 IST" duration-ms="15226">
+    <groups>
+    </groups>
+    <test started-at="2023-09-26T11:35:23 IST" name="C:/Users/ELCOT/IdeaProjects/Testng-Practice" finished-at="2023-09-26T11:35:38 IST" duration-ms="15226">
+      <class name="Attributes.Test_NameDiscription">
+        <test-method signature="registerAccountTest()[pri:0, instance:Attributes.Test_NameDiscription@6ee12bac]" started-at="2023-09-26T11:35:23 IST" name="registerAccountTest" finished-at="2023-09-26T11:35:28 IST" duration-ms="5021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountTest -->
+        <test-method signature="loginTest()[pri:0, instance:Attributes.Test_NameDiscription@6ee12bac]" started-at="2023-09-26T11:35:28 IST" name="loginTest" finished-at="2023-09-26T11:35:33 IST" depends-on-methods="Attributes.Test_NameDiscription.registerAccountTest" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="postPictureTest()[pri:0, instance:Attributes.Test_NameDiscription@6ee12bac]" started-at="2023-09-26T11:35:33 IST" name="postPictureTest" finished-at="2023-09-26T11:35:38 IST" depends-on-methods="Attributes.Test_NameDiscription.loginTest" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postPictureTest -->
+        <test-method signature="sendMessageTest()[pri:0, instance:Attributes.Test_NameDiscription@6ee12bac]" started-at="2023-09-26T11:35:33 IST" name="sendMessageTest" description="message sent" finished-at="2023-09-26T11:35:38 IST" depends-on-methods="Attributes.Test_NameDiscription.loginTest" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessageTest -->
+      </class> <!-- Attributes.Test_NameDiscription -->
+    </test> <!-- C:/Users/ELCOT/IdeaProjects/Testng-Practice -->
+  </suite> <!-- description test -->
+</testng-results>

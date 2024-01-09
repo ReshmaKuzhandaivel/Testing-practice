@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ELCOT/IdeaProjects/Testng-Practice"
+          parallel="methods" thread-count="1">
+        <parameter name="whom" value="Sham"/>
+        <parameter name="File" value="Page object model"/>
+        <parameter name="File name " value="My File"/>
+        <classes>
+            <class name="Attributes.ParameterTest"/>
+
+        </classes>
+    </test>
+</suite>
